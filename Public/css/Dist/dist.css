@@ -1,0 +1,252 @@
+@font-face {
+	font-family: "Canela Thin";
+	src: url('../../fonts/Canela-Thin.ttf');
+}
+
+@font-face {
+	font-family: "Canela ThinItalic";
+	src: url('../../fonts/Canela-ThinItalic.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Mono Light";
+	src: url('../../fonts/RobotoMono-Light.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Mono LightItalic";
+	src: url('../../fonts/RobotoMono-LightItalic.ttf');
+}
+
+
+html *{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*Color assets*/
+:root{
+	--primary-beige: #F1EFDF;
+	--primary-dark: #060606;
+	--primary-beigeLight: #F7F2EE;
+
+
+	/*margin*/
+	--padding-left: 10%;
+	--padding-right: 10%;
+}
+
+/*font assets*/
+
+.cta-dark{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 120%;
+	/* or 14px */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: var(--primary-dark);
+}
+
+.cta-light{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 120%;
+	/* or 14px */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: var(--primary-beige);
+}
+
+
+.h1-dark{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 130%;
+	/* or 57px */
+
+	text-transform: uppercase;
+
+	color: var(--primary-dark);
+}
+
+.h1-light{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 130%;
+	/* or 57px */
+
+	text-transform: uppercase;
+
+	color: var(--primary-beige);
+}
+
+
+.h2-dark{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 130%;
+	color: var(--primary-dark);
+}
+
+.h2-ligth{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 130%;
+	color: var(--primary-beige);
+}
+
+.h3-dark{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 170%;
+	/* or 20px */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: var(--primary-dark);
+}
+
+.h3-light{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 170%;
+	/* or 20px */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: var(--primary-beige);
+}
+
+
+.h4-dark{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	line-height: 120%;
+	color: var(--primary-dark);
+}
+
+.h4-light{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	line-height: 120%;
+	color: var(--primary-beige);
+}
+
+.body-dark{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 20px;
+	/* identical to box height, or 158% */
+
+	letter-spacing: 0.128px;
+	color: var(--primary-dark);
+}
+
+.body-light{
+	font-family: Roboto Mono Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 20px;
+	/* identical to box height, or 158% */
+
+	letter-spacing: 0.128px;
+	color: var(--primary-beige);
+}
+
+.titleProject-dark{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 57px;
+	line-height: 79px;
+	color: var(--primary-dark);
+}
+
+.titleProject-light{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 57px;
+	line-height: 79px;
+	color: var(--primary-beige);
+}
+
+.midTitleProject-dark{
+	font-family: Canela;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 120%;
+	color: var(--primary-dark);
+}
+
+.midTitleProject-light{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 120%;
+	color: var(--primary-beige);
+}
+
+
+
+
+
+/*nav section*/
+.header-nav{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 32px;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+	z-index: 99;
+}
+
+.header-nav-right > a{
+	margin-right: 32px;
+}
+
+.header-nav-right > a:last-child{
+	margin-right: 0px;
+}
+
+
+
+
