@@ -1,9 +1,4 @@
-:root{
-	/*ui colors*/
-	--ui-blueLight: #DFE2E0;
-	--ui-blueDark: #11121D;
-	--ui-greenlight: #ACA892;
-}
+
 
 body{
 	background: var(--primary-beigeLight);
@@ -15,6 +10,7 @@ body{
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	
 }
 
 .home-section-content{
@@ -99,8 +95,6 @@ body{
 	align-items: flex-end;
 	text-align: center;
 	bottom: 60px;
-	padding-left: 18%;
-	padding-right: 18%;
 }
 
 .favoritProject-left-section > div{

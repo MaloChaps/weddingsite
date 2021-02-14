@@ -9,14 +9,10 @@
 }
 
 @font-face {
-	font-family: "Roboto Mono Light";
-	src: url('../../fonts/RobotoMono-Light.ttf');
+	font-family: "Roboto Mono Regular";
+	src: url('../../fonts/RobotoMono-Regular.ttf');
 }
 
-@font-face {
-	font-family: "Roboto Mono LightItalic";
-	src: url('../../fonts/RobotoMono-LightItalic.ttf');
-}
 
 
 html *{
@@ -27,12 +23,17 @@ html *{
 	text-decoration: none;
 }
 
-/*Color assets*/
+
 :root{
+	/*primary colors*/
 	--primary-beige: #F1EFDF;
 	--primary-dark: #060606;
 	--primary-beigeLight: #F7F2EE;
 
+	/*ui colors*/
+	--ui-blueLight: #DFE2E0;
+	--ui-blueDark: #11121D;
+	--ui-greenlight: #ACA892;
 
 	/*margin*/
 	--padding-left: 10%;
@@ -42,7 +43,7 @@ html *{
 /*font assets*/
 
 .cta-dark{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -56,7 +57,7 @@ html *{
 }
 
 .cta-light{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -116,7 +117,7 @@ html *{
 }
 
 .h3-dark{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -130,7 +131,7 @@ html *{
 }
 
 .h3-light{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -163,7 +164,7 @@ html *{
 }
 
 .body-dark{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
@@ -175,7 +176,7 @@ html *{
 }
 
 .body-light{
-	font-family: Roboto Mono Light;
+	font-family: Roboto Mono Regular;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
@@ -222,7 +223,21 @@ html *{
 	color: var(--primary-beige);
 }
 
+/*cta primary*/
 
+.cta-primary{
+	font-family: Roboto Mono Regular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 17px;
+	letter-spacing: 0.512px;
+	text-transform: uppercase;
+	padding: 16px 28px;
+	background: var(--primary-dark);
+	color: var(--primary-beigeLight);
+	text-decoration: none;
+}
 
 
 
