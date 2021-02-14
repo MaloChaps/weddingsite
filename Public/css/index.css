@@ -2,7 +2,9 @@
 
 body{
 	background: var(--primary-beigeLight);
+	height: auto;
 }
+
 
 /* home section*/
 .home-section{

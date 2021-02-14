@@ -34,6 +34,7 @@ html *{
 	--ui-blueLight: #DFE2E0;
 	--ui-blueDark: #11121D;
 	--ui-greenlight: #ACA892;
+	--ui-bluePrint: #4C5771;
 
 	/*margin*/
 	--padding-left: 10%;
@@ -254,6 +255,10 @@ html *{
 	z-index: 99;
 }
 
+.header-nav > h1 > a{
+	text-decoration: none;
+}
+
 .header-nav-right > a{
 	margin-right: 32px;
 }
@@ -263,5 +268,28 @@ html *{
 }
 
 
+/*contact me now*/
 
+/*all projects section //*/
+.contactNow-section{
+	display: flex;justify-content: center;align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+	padding-top: 155px;
+	padding-bottom: 155px;
+	background: var(--ui-bluePrint);
+}
+
+.contactNow-section > h3, 
+.contactNow-section > h2{
+	padding-bottom: 76px;
+	text-align: center;
+}
+
+.contactNow-section > h2 > a{
+	text-decoration: underline;
+	color: var(--primary-beigeLight);
+}
 

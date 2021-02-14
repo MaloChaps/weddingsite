@@ -15,6 +15,7 @@ body{
 
 .introduction-section{
 	width: 100%;
+	margin-bottom: 200px;
 }
 
 .introduction-section-information{
@@ -65,12 +66,78 @@ body{
 
 /*video content section*/
 .video-content-section{
-	
+	width: 100%;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+	padding-bottom: 100px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* ratio 16/9 */
+    height: 0; overflow: hidden;
+    clear: both;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
 
+.photo-content-section{
+	width: 100%;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+	padding-bottom: 100px;
+}
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  list-style: none;
+  margin: 1em auto;
+  padding: 0;
+}
+.wrapper li {
+  border: none;
+  grid-column-end: span 1;
+  height: 70vh;
+}
+
+.wrapper li.min {
+  grid-column-end: span 2;
+}
+
+.wrapper li.middle {
+  grid-column-end: span 3;
+}
+
+.wrapper li.full {
+  grid-column-end: span 4;
+}
+
+.wrapper li.landscape {
+  grid-column-end: span 6;
+}
+
+
+
+.wrapper li img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 
 
