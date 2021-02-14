@@ -71,6 +71,35 @@ html *{
 	color: var(--primary-beige);
 }
 
+@media screen and (max-width: 425px){
+	.cta-dark{
+	font-family: Roboto Mono Regular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11.5px;
+	line-height: 120%;
+	/* or 14px */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: var(--primary-dark);
+	}
+
+	.cta-light{
+		font-family: Roboto Mono Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11.5px;
+		line-height: 120%;
+		/* or 14px */
+
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+
+		color: var(--primary-beige);
+	}
+}
 
 .h1-dark{
 	font-family: Canela Thin;
@@ -98,6 +127,27 @@ html *{
 	color: var(--primary-beige);
 }
 
+@media screen and (max-width: 425px){
+	.h1-dark {
+	    font-family: Canela Thin;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 22px;
+	    line-height: 130%;
+	    text-transform: uppercase;
+	    color: var(--primary-dark);
+	}
+
+	.h1-light {
+	    font-family: Canela Thin;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 22px;
+	    line-height: 130%;
+	    text-transform: uppercase;
+	    color: var(--primary-beigeLight);
+	}
+}
 
 .h2-dark{
 	font-family: Canela Thin;
@@ -116,6 +166,25 @@ html *{
 	line-height: 130%;
 	color: var(--primary-beige);
 }
+@media screen and (max-width: 425px){
+	.h2-dark {
+	    font-family: Canela Thin;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 16px;
+	    line-height: 130%;
+	    color: var(--primary-dark);
+	}
+	.h2-light {
+	    font-family: Canela Thin;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 16px;
+	    line-height: 130%;
+	    color: var(--primary-beigeLight);
+	}
+}
+
 
 .h3-dark{
 	font-family: Roboto Mono Regular;
@@ -146,6 +215,30 @@ html *{
 }
 
 
+@media screen and (max-width: 425px){
+	.h3-light {
+    font-family: Roboto Mono Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.5px;
+    line-height: 170%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-beige);
+	}
+	.h3-dark {
+    font-family: Roboto Mono Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.5px;
+    line-height: 170%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+	}
+}
+
+
 .h4-dark{
 	font-family: Canela Thin;
 	font-style: normal;
@@ -162,6 +255,26 @@ html *{
 	font-size: 120px;
 	line-height: 120%;
 	color: var(--primary-beige);
+}
+@media screen and (max-width: 425px){
+	.h4-dark{
+	font-family: Canela Thin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 120%;
+	color: var(--primary-dark);
+	}
+
+	.h4-light{
+		font-family: Canela Thin;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 120%;
+		color: var(--primary-beige);
+	}
+
 }
 
 .body-dark{
@@ -186,6 +299,30 @@ html *{
 
 	letter-spacing: 0.128px;
 	color: var(--primary-beige);
+}
+
+@media screen and (max-width: 425px){
+
+	.body-dark {
+	    font-family: Roboto Mono Regular;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 30px;
+	    line-height: 150%;
+	    letter-spacing: 0.128px;
+	    color: var(--primary-dark);
+	}
+
+	.body-light {
+	    font-family: Roboto Mono Regular;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-size: 30px;
+	    line-height: 150%;
+	    letter-spacing: 0.128px;
+	    color: var(--primary-beigeLight);
+	}
+
 }
 
 .titleProject-dark{
@@ -223,6 +360,29 @@ html *{
 	line-height: 120%;
 	color: var(--primary-beige);
 }
+
+
+@media screen and (max-width: 425px){
+	.midTitleProject-light {
+    font-family: Canela Thin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140%;
+    color: var(--primary-beige);
+	}
+
+	.midTitleProject-dark {
+    font-family: Canela Thin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140%;
+    color: var(--primary-dark);
+	}
+}
+
+
 
 /*cta primary*/
 
@@ -265,6 +425,73 @@ html *{
 
 .header-nav-right > a:last-child{
 	margin-right: 0px;
+}
+
+@media screen and (max-width: 425px){
+
+	.header-nav{
+		display: none;
+/*		display: flex;*/
+		padding-top: 0px;
+		width: 100%;
+		height: 100vh;
+		background: var(--primary-dark);
+		position: fixed;
+		
+		flex-direction: column;
+		padding-left: var(--padding-left);
+		padding-right: var(--padding-right);
+		z-index: 99;
+
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-nav:after{
+		content: '';
+		width: 35px;
+		height: 3px;
+		background: var(--primary-beige);
+		position: absolute;
+		top: 45px;
+		right: 30px;
+		transform: rotate(-45deg);
+	}
+
+	.header-nav:before{
+		content: '';
+		width: 35px;
+		height: 3px;
+		background: var(--primary-beige);
+		position: absolute;
+		top: 45px;
+		right: 30px;
+		transform: rotate(45deg);
+	}
+
+	.header-nav > h1{
+		margin-bottom: 100px;
+	}
+
+	.header-nav > h1 > a,
+	.header-nav-right > a{
+		font-size: 20px;
+	}
+
+	.header-nav-right{
+		display: flex;flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.header-nav-right > a{
+		margin-right: 0;
+		margin-bottom: 100px;
+	}
+	.header-nav-right > a:last-child{
+		margin-right: 0;
+		margin-bottom: 0px;
+	}
 }
 
 

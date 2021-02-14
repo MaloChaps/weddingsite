@@ -28,8 +28,8 @@ body{
 .introduction-section-information > h2,
 .introduction-section-information > h1{
 	align-items: center;
-
 }
+
 .introduction-section-information > h2{
 	margin-bottom: 35px;
 }
@@ -60,6 +60,18 @@ body{
 
 .right-introduction-section-content{
 	max-width: 500px;
+}
+
+@media screen and (max-width: 425px){
+	.introduction-section-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+	}
+	.introduction-section-information > h2{
+		font-size: 24px;
+	}
 }
 
 
