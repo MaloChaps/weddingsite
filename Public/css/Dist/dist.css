@@ -327,10 +327,6 @@ html *{
 	    color: var(--primary-beigeLight);
 	}
 
-	.left-introduction-section-content{
-		flex-direction: row;
-	}
-
 }
 
 .titleProject-dark{
