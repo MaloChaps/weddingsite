@@ -35,10 +35,14 @@ html *{
 	--ui-blueDark: #11121D;
 	--ui-greenlight: #ACA892;
 	--ui-bluePrint: #4C5771;
+	--ui-greyLight: #D1D1D1;
+	--ui-blackDark: #1A1A14;
 
 	/*margin*/
 	--padding-left: 10%;
 	--padding-right: 10%;
+
+
 }
 
 /*font assets*/
@@ -307,8 +311,8 @@ html *{
 	    font-family: Roboto Mono Regular;
 	    font-style: normal;
 	    font-weight: normal;
-	    font-size: 30px;
-	    line-height: 150%;
+	    font-size: 12px;
+	    line-height: 160%;
 	    letter-spacing: 0.128px;
 	    color: var(--primary-dark);
 	}
@@ -317,10 +321,14 @@ html *{
 	    font-family: Roboto Mono Regular;
 	    font-style: normal;
 	    font-weight: normal;
-	    font-size: 30px;
-	    line-height: 150%;
+	    font-size: 12px;
+	    line-height: 160%;
 	    letter-spacing: 0.128px;
 	    color: var(--primary-beigeLight);
+	}
+
+	.left-introduction-section-content{
+		flex-direction: row;
 	}
 
 }
@@ -344,7 +352,7 @@ html *{
 }
 
 .midTitleProject-dark{
-	font-family: Canela;
+	font-family: Canela Thin;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 48px;
@@ -519,4 +527,7 @@ html *{
 	text-decoration: underline;
 	color: var(--primary-beigeLight);
 }
+
+
+
 

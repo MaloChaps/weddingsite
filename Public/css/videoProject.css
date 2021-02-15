@@ -27,7 +27,7 @@ body{
 
 .introduction-section-information > h2,
 .introduction-section-information > h1{
-	align-items: center;
+	 text-align: center;
 }
 
 .introduction-section-information > h2{
@@ -70,7 +70,12 @@ body{
     flex-direction: column;
 	}
 	.introduction-section-information > h2{
-		font-size: 24px;
+		font-size: 16px;
+	}
+
+	.introduction-section-information > h1{
+	font-size: 37px;
+    line-height: 120%;
 	}
 }
 

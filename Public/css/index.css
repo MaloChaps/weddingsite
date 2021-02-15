@@ -196,7 +196,7 @@
 .card-contentProject-section{
 	display: flex;
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 }
 
 .left-card-contentProject-section{
@@ -207,8 +207,6 @@
 	flex-direction: column;
 	padding-top: 120px;
 	padding-bottom: 120px;
-	background: var(--ui-greenlight);
-
 }
 
 
