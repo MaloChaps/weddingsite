@@ -140,18 +140,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 32px 32px;
+  gap: 100px 100px;
   grid-template-areas:
-    "img2 img2 img2 . . . . img4 img4 img4 ."
-    "img2 img2 img2 . img3 img3 . img4 img4 img4 ."
-    ". . iiii iiii . . . . img5 img5 img5"
-    ". . iiii iiii img6 img6 img6 img6 img5 img5 img5"
+    "img1 img1 img1 . . . . img4 img4 img4 ."
+    "img1 img1 img1 . img3 img3 . img4 img4 img4 ."
+    ". . img2 img2 . . . . img5 img5 img5"
+    ". . img2 img2 img6 img6 img6 img6 img5 img5 img5"
     "img7 img7 img7 . img6 img6 img6 img6 . . .";
 }
 
-.img2 { grid-area: img2; }
+.img1 { grid-area: img1; }
 
-.iiii { grid-area: iiii; }
+.img2 { grid-area: img2; }
 
 .img3 { grid-area: img3; }
 
@@ -162,6 +162,16 @@
 .img6 { grid-area: img6; }
 
 .img7 { grid-area: img7; }
+
+
+.grid-container > div > img{
+    object-fit: cover;
+    height: 14Vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+    gap: 30px 30px;
 
 
 

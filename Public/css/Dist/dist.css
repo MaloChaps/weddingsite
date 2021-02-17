@@ -41,8 +41,6 @@ html *{
 	/*margin*/
 	--padding-left: 10%;
 	--padding-right: 10%;
-
-
 }
 
 /*font assets*/
@@ -433,9 +431,21 @@ html *{
 
 @media screen and (max-width: 425px){
 
+	.cross-open.close
+	:after{
+		content: '';
+		width: 35px;
+		height: 3px;
+		background: var(--primary-beige);
+		position: absolute;
+		top: 45px;
+		right: 30px;
+		transform: rotate(-45deg);
+	}
+
 	.header-nav{
-		display: none;
-/*		display: flex;*/
+		/*display: none;*/
+		display: flex;
 		padding-top: 0px;
 		width: 100%;
 		height: 100vh;
