@@ -19,7 +19,7 @@
 			<a href="#" class="cta-dark">contact</a>
 		</div>
 
-		<div class="cross-open"></div>
+		<div class="cross"></div>
 	</header>
 
 	<main class="main-content">
@@ -111,11 +111,24 @@
  			</h2>
 	</section>
 
+
+	
 	<!-- script -->
-	<script type="text/javascript" src="Public/app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		$( "iframe" ).wrap( "<div class='video-container'></div>" );
+		 const cross = document.querySelector('.cross')
+		 const headerNav = document.querySelector('.header-nav')
+		 const headerNavRight = document.querySelector('.header-nav-right')
+
+        cross.addEventListener('click', () => {
+        	cross.classList.toggle('close')
+        	headerNav.classList.toggle('close')
+        	headerNavRight.classList.toggle('close')
+        })
+
+
+
+      	$( "iframe" ).wrap( "<div class='video-container'></div>" );
 		$( "object" ).wrap( "<div class='video-container'></div>" );
 		$( "embed" ).wrap( "<div class='video-container'></div>" );
 	</script>

@@ -14,18 +14,20 @@
 <body>
 
 	<header class="header-nav">
-		<h1><a href="index.html" class="cta-light">malo chap's</a></h1>
+		<h1><a href="index.html" class="cta-dark">malo chap's</a></h1>
 		<div class="header-nav-right">
-			<a href="#" class="cta-light">about</a>
-			<a href="#" class="cta-light">price</a>
-			<a href="#" class="cta-light">contact</a>
+			<a href="#" class="cta-dark">about</a>
+			<a href="#" class="cta-dark">price</a>
+			<a href="#" class="cta-dark">contact</a>
 		</div>
+
+		<div class="cross"></div>
 	</header>
 
 	<section class="home-section">
 		<div class="home-section-content">
 			<a href="#" class="h3-light">recent work</a>
-			<p class="midTitleProject-light">Charles & Margaux, 2020 / Dropbox eSignature, 2020 / One Day's Wages, 2020 /  The New Facebook, 2019 / Story Highlights, 2019 / Marketplace Internationalization, 2018 / Archive</p>
+			<p class="midTitleProject-light">Charles & Margaux, 2020 / Emmanuelle & Charles, 2020</p>
 			<div class="home-section-social-content">
 				<a class="cta-light" href="#">Instagram</a>
 				<a class="cta-light" href="#">facebook</a>
@@ -148,8 +150,23 @@
  			</h2>
 	</section>
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		
+		 const cross = document.querySelector('.cross')
+		 const headerNav = document.querySelector('.header-nav')
+		 const headerNavRight = document.querySelector('.header-nav-right')
+
+        cross.addEventListener('click', () => {
+        	cross.classList.toggle('close')
+        	headerNav.classList.toggle('close')
+        	headerNavRight.classList.toggle('close')
+        })
+
+
+
+      	$( "iframe" ).wrap( "<div class='video-container'></div>" );
+		$( "object" ).wrap( "<div class='video-container'></div>" );
+		$( "embed" ).wrap( "<div class='video-container'></div>" );
 	</script>
 
 

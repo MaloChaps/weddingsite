@@ -430,21 +430,59 @@ html *{
 }
 
 @media screen and (max-width: 425px){
-
-	.cross-open.close
-	:after{
+	
+	.cross:after{
 		content: '';
-		width: 35px;
-		height: 3px;
+		width: 38px;
+		height: 2px;
+		background: var(--primary-dark);
+		position: absolute;
+		top: 48px;
+		right: 35px;
+		transform: rotate(0deg);
+		transition: .3s ease-in;
+	}
+
+	.cross:before{
+		content: '';
+		width: 38px;
+		height: 2px;
+		background: var(--primary-dark);
+		position: absolute;
+		top: 58px;
+		right: 30px;
+		transform: rotate(0deg);
+		transition: .3s ease-in;
+	}
+
+	.cross.close:after{
+		content: '';
+		width: 38px;
+		height: 2px;
 		background: var(--primary-beige);
 		position: absolute;
-		top: 45px;
+		top: 50px;
 		right: 30px;
 		transform: rotate(-45deg);
+		transition: .3s ease-in;
+	}
+
+	.cross.close:before{
+		content: '';
+		width: 38px;
+		height: 2px;
+		background: var(--primary-beige);
+		position: absolute;
+		top: 50px;
+		right: 30px;
+		transform: rotate(45deg);
+		transition: .3s ease-in;
 	}
 
 	.header-nav{
-		/*display: none;*/
+		transition: 0.1s ease-in;
+	}
+	.header-nav.close{
 		display: flex;
 		padding-top: 0px;
 		width: 100%;
@@ -456,43 +494,32 @@ html *{
 		padding-left: var(--padding-left);
 		padding-right: var(--padding-right);
 		z-index: 99;
+		color: white;
 
 		justify-content: center;
 		align-items: center;
-	}
-
-	.header-nav:after{
-		content: '';
-		width: 35px;
-		height: 3px;
-		background: var(--primary-beige);
-		position: absolute;
-		top: 45px;
-		right: 30px;
-		transform: rotate(-45deg);
-	}
-
-	.header-nav:before{
-		content: '';
-		width: 35px;
-		height: 3px;
-		background: var(--primary-beige);
-		position: absolute;
-		top: 45px;
-		right: 30px;
-		transform: rotate(45deg);
-	}
-
-	.header-nav > h1{
-		margin-bottom: 100px;
-	}
-
-	.header-nav > h1 > a,
-	.header-nav-right > a{
-		font-size: 20px;
+		transform: translateX(00px);
+		transition: 0.3s ease-in;
 	}
 
 	.header-nav-right{
+		display: none;
+	}
+
+	.header-nav > h1 > a{
+		font-size: 14px;
+	}
+
+	.header-nav.close > h1{
+		display: none;
+	}
+
+	.header-nav-right.close > a{
+		font-size: 20px;
+		color: white;
+	}
+
+	.header-nav-right.close{
 		display: flex;flex-direction: column;
 		align-items: center;
 		margin: 0;
