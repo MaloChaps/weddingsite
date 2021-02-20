@@ -403,6 +403,9 @@ html *{
 }
 
 
+.cross{
+	display: none;
+}
 
 /*nav section*/
 .header-nav{
@@ -430,7 +433,12 @@ html *{
 }
 
 @media screen and (max-width: 425px){
-	
+	.cross{
+		display: block;
+		width: 50px;
+		height: 40px;
+	}
+
 	.cross:after{
 		content: '';
 		width: 38px;

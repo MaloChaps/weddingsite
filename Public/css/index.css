@@ -116,10 +116,13 @@
 	.favoritProject-section{
 		flex-direction: column;
 	}
-	.favoritProject-right-section,
+	.favoritProject-right-section{
+		width: 100%;
+		height: 50vh;
+	}
 	.favoritProject-left-section{
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 	}
 	.favoritProject-left-section > p{
 		bottom: 40px;
@@ -127,51 +130,72 @@
 }
 
 
-/* grid image section*/
-.gridImage-section{
+/*Photo content section*/
+
+.photo-content-section{
 	width: 100%;
 	padding-left: var(--padding-left);
-	padding-right: var(--padding-left);
-	padding-top: 100px;
+	padding-right: var(--padding-right);
 	padding-bottom: 100px;
+	padding-top: 100px;
 }
 
-.grid-container {
+.wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 100px 100px;
-  grid-template-areas:
-    "img1 img1 img1 . . . . img4 img4 img4 ."
-    "img1 img1 img1 . img3 img3 . img4 img4 img4 ."
-    ". . img2 img2 . . . . img5 img5 img5"
-    ". . img2 img2 img6 img6 img6 img6 img5 img5 img5"
-    "img7 img7 img7 . img6 img6 img6 img6 . . .";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  list-style: none;
+  padding: 0;
+}
+.wrapper li {
+  border: none;
+  grid-column-end: span 1;
+  height: 70vh;
 }
 
-.img1 { grid-area: img1; }
-
-.img2 { grid-area: img2; }
-
-.img3 { grid-area: img3; }
-
-.img4 { grid-area: img4; }
-
-.img5 { grid-area: img5; }
-
-.img6 { grid-area: img6; }
-
-.img7 { grid-area: img7; }
-
-
-.grid-container > div > img{
-    object-fit: cover;
-    height: 14Vh;
-    min-width: 100%;
-    min-height: 100%;
+.wrapper li.min {
+  grid-column-end: span 2;
 }
 
-   
+.wrapper li.middle {
+  grid-column-end: span 3;
+}
+
+.wrapper li.full {
+  grid-column-end: span 4;
+}
+
+.wrapper li.landscape {
+  grid-column-end: span 6;
+}
+
+.wrapper li img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 425px){
+
+	.wrapper li {
+	    border: none;
+	    grid-column-end: span 1;
+	    height: 30vh;
+	}
+
+	.photo-content-section{
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+
+}
+
+
 
 /*all projects section //*/
 .allProjects-section{
