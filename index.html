@@ -13,12 +13,18 @@
 </head>
 <body>
 
-	<header class="header-nav">
-		<h1><a href="index.html" class="cta-dark">malo chap's</a></h1>
+	<div class="loader">
+		<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M32 0L34.489 29.511L64 32L34.489 34.489L32 64L29.511 34.489L0 32L29.511 29.511L32 0Z" fill="#060606"/>
+		</svg>
+	</div>
+
+	<header class="header-nav" id="navbar">
+		<h1><a href="index.html" class="cta-light">malo chap's</a></h1>
 		<div class="header-nav-right">
-			<a href="#" class="cta-dark">about</a>
-			<a href="#" class="cta-dark">price</a>
-			<a href="#" class="cta-dark">contact</a>
+			<a href="https://malochaperon.com" target="_blanck" class="cta-light">Freelance</a>
+			<a href="#" class="cta-light">About</a>
+			<a href="mailto:chaperon.malo@gmail.com" target="_blanck" class="cta-light">contact</a>
 		</div>
 
 		<div class="cross"></div>
@@ -157,18 +163,6 @@
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script src="public/js/all.js"></script>
 	<script type="text/javascript">
-		 const cross = document.querySelector('.cross')
-		 const headerNav = document.querySelector('.header-nav')
-		 const headerNavRight = document.querySelector('.header-nav-right')
-
-        cross.addEventListener('click', () => {
-        	cross.classList.toggle('close')
-        	headerNav.classList.toggle('close')
-        	headerNavRight.classList.toggle('close')
-        })
-
-
-
       	$( "iframe" ).wrap( "<div class='video-container'></div>" );
 		$( "object" ).wrap( "<div class='video-container'></div>" );
 		$( "embed" ).wrap( "<div class='video-container'></div>" );

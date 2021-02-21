@@ -114,20 +114,10 @@
 
 	
 	<!-- script -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="public/js/all.js"></script>
 	<script type="text/javascript">
-		 const cross = document.querySelector('.cross')
-		 const headerNav = document.querySelector('.header-nav')
-		 const headerNavRight = document.querySelector('.header-nav-right')
-
-        cross.addEventListener('click', () => {
-        	cross.classList.toggle('close')
-        	headerNav.classList.toggle('close')
-        	headerNavRight.classList.toggle('close')
-        })
-
-
-
       	$( "iframe" ).wrap( "<div class='video-container'></div>" );
 		$( "object" ).wrap( "<div class='video-container'></div>" );
 		$( "embed" ).wrap( "<div class='video-container'></div>" );

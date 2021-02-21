@@ -1,24 +1,63 @@
+// scroll nav 
+$(window).load(function() {
+         $(".loader").fadeOut("1000"); 
+        });
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+const cross = document.querySelector('.cross')
+         const headerNav = document.querySelector('.header-nav')
+         const headerNavRight = document.querySelector('.header-nav-right')
+
+        cross.addEventListener('click', () => {
+            cross.classList.toggle('close')
+            headerNav.classList.toggle('close')
+            headerNavRight.classList.toggle('close')
+        })
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 1000) {
+        $('.header-nav').addClass('scroll');
+    }
+    else {
+        $('.header-nav').removeClass('scroll');
+    }
+});
+
+
+
 // scroll reveal anime
 const sr = ScrollReveal();
 
 // dist title
 
-const delayTitle = 500;
+const delayTitle = 200;
 const durationTitle = 1500;
 
-sr.reveal('.cta-dark', {
-	 delay: delayTitle,
-    duration: durationTitle,
-    distance: "100px",
-    origin: "bottom"
-});
+// sr.reveal('.cta-dark', {
+// 	 delay: delayTitle,
+//     duration: durationTitle,
+//     distance: "100px",
+//     origin: "bottom"
+// });
 
-sr.reveal('.cta-light', {
-	 delay: delayTitle,
-    duration: durationTitle,
-    distance: "100px",
-    origin: "bottom"
-});
+// sr.reveal('.cta-light', {
+// 	 delay: delayTitle,
+//     duration: durationTitle,
+//     distance: "100px",
+//     origin: "bottom"
+// });
 
 
 sr.reveal('.h1-dark', {
@@ -193,7 +232,6 @@ sr.reveal('.contactNow-section', {
     distance: distanceComposants + 'px',
     origin: "bottom"
 });
-
 
 
 
