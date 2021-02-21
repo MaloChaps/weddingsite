@@ -13,14 +13,6 @@ const cross = document.querySelector('.cross')
             headerNavRight.classList.toggle('close')
         })
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 1000) {
-        $('.header-nav').addClass('scroll');
-    }
-    else {
-        $('.header-nav').removeClass('scroll');
-    }
-});
 
 
 

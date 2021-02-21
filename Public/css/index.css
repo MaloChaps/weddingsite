@@ -27,6 +27,15 @@
 	margin-bottom: 32px
 }
 
+.home-section-content > .midTitleProject-light > a{
+	color: var(--primary-beige);
+	text-decoration: none;
+}
+
+.home-section-content > .midTitleProject-light > a:hover{
+	text-decoration: underline;
+}
+
 .home-section-social-content > a{
 	margin-right: 32px;
 }
