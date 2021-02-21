@@ -23,6 +23,9 @@ html *{
 	text-decoration: none;
 }
 
+a:hover{
+	text-decoration: underline;
+}
 
 :root{
 	/*primary colors*/
