@@ -63,10 +63,6 @@ body{
 	flex-direction: column;
 }
 
-.left-introduction-section-content > p > a{	
-	color: var(--primary-dark);
-}
-
 .right-introduction-section-content{
 	max-width: 500px;
 }

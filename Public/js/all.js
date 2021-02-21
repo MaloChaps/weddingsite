@@ -3,19 +3,6 @@ $(window).load(function() {
          $(".loader").fadeOut("1000"); 
         });
 
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-
 const cross = document.querySelector('.cross')
          const headerNav = document.querySelector('.header-nav')
          const headerNavRight = document.querySelector('.header-nav-right')
