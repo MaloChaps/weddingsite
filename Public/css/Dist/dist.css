@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: "Canela Thin";
 	src: url('../../fonts/Canela-Thin.ttf');
@@ -51,20 +52,38 @@ a:hover{
 	height: 100vh;
 	position: fixed;
 	z-index: 999;
-	display: flex;justify-content: center;align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;
 	background: var(--primary-beige);
 }
 .loader > svg{
-	transform: scale(1.9);
-	animation: loaderAnimation 2s ease-out infinite;
+	-webkit-transform: scale(1.9);
+	    -ms-transform: scale(1.9);
+	        transform: scale(1.9);
+	-webkit-animation: loaderAnimation 2s ease-out infinite;
+	        animation: loaderAnimation 2s ease-out infinite;
+}
+
+@-webkit-keyframes loaderAnimation{
+	50%{
+		-webkit-transform: scale(2.7);
+		        transform: scale(2.7);
+	}
+	100%{
+		-webkit-transform: scale(1.9);
+		        transform: scale(1.9);
+	}
 }
 
 @keyframes loaderAnimation{
 	50%{
-		transform: scale(2.7);
+		-webkit-transform: scale(2.7);
+		        transform: scale(2.7);
 	}
 	100%{
-		transform: scale(1.9);
+		-webkit-transform: scale(1.9);
+		        transform: scale(1.9);
 	}
 }
 
@@ -435,15 +454,23 @@ a:hover{
 /*nav section*/
 .header-nav{
 	position: fixed;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 100%;
 	padding-top: 20px;
 	padding-left: var(--padding-left);
 	padding-right: var(--padding-right);
 	z-index: 99;
 	padding-bottom: 20px;
+	-webkit-transition: .2s ease-in;
+	-o-transition: .2s ease-in;
 	transition: .2s ease-in;
 }
 
@@ -476,7 +503,11 @@ a:hover{
 		position: absolute;
 		top: 48px;
 		right: 35px;
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
+		-webkit-transition: .3s ease-in;
+		-o-transition: .3s ease-in;
 		transition: .3s ease-in;
 	}
 
@@ -488,7 +519,11 @@ a:hover{
 		position: absolute;
 		top: 58px;
 		right: 30px;
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		        transform: rotate(0deg);
+		-webkit-transition: .3s ease-in;
+		-o-transition: .3s ease-in;
 		transition: .3s ease-in;
 	}
 
@@ -500,7 +535,11 @@ a:hover{
 		position: absolute;
 		top: 50px;
 		right: 30px;
-		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+		-webkit-transition: .3s ease-in;
+		-o-transition: .3s ease-in;
 		transition: .3s ease-in;
 	}
 
@@ -512,14 +551,22 @@ a:hover{
 		position: absolute;
 		top: 50px;
 		right: 30px;
-		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		-webkit-transition: .3s ease-in;
+		-o-transition: .3s ease-in;
 		transition: .3s ease-in;
 	}
 
 	.header-nav{
+		-webkit-transition: 0.1s ease-in;
+		-o-transition: 0.1s ease-in;
 		transition: 0.1s ease-in;
 	}
 	.header-nav.close{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		padding-top: 0px;
 		width: 100%;
@@ -527,15 +574,31 @@ a:hover{
 		background: var(--primary-dark);
 		position: fixed;
 		
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		
+		-webkit-box-direction: normal;
+		
+		    -ms-flex-direction: column;
+		
+		        flex-direction: column;
 		padding-left: var(--padding-left);
 		padding-right: var(--padding-right);
 		z-index: 99;
 		color: white;
 
-		justify-content: center;
-		align-items: center;
-		transform: translateX(00px);
+		-webkit-box-pack: center;
+
+		    -ms-flex-pack: center;
+
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-transform: translateX(00px);
+		    -ms-transform: translateX(00px);
+		        transform: translateX(00px);
+		-webkit-transition: 0.3s ease-in;
+		-o-transition: 0.3s ease-in;
 		transition: 0.3s ease-in;
 	}
 
@@ -558,8 +621,12 @@ a:hover{
 	}
 
 	.header-nav-right.close{
-		display: flex;flex-direction: column;
-		align-items: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		margin: 0;
 	}
 
@@ -578,8 +645,13 @@ a:hover{
 
 /*all projects section //*/
 .contactNow-section{
-	display: flex;justify-content: center;align-items: center;
-	flex-direction: column;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 100%;
 	padding-left: var(--padding-left);
 	padding-right: var(--padding-right);
@@ -598,7 +670,6 @@ a:hover{
 	text-decoration: underline;
 	color: var(--primary-beigeLight);
 }
-
 
 
 
